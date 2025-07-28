@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Slight-Regular';
+  src: url('@/assets/fonts/Slight-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EBGaramond-Regular';
+  src: url('@/assets/fonts/EBGaramond-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
