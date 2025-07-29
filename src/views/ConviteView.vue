@@ -2,78 +2,78 @@
   <div class="text-center EBGaramond">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrir = true">
-        <div class="d-flex mx-auto flex-column m-b fundo-estendido mt-3">
-          <div class="line-height m-y p-x">
-            "O amor é paciente, é bondoso. O amor tudo crê, tudo espera, tudo suporta. O amor jamais acabará!”
-            <div>1 Co 13:4-8</div>
-          </div>
-          
-          <div class="mb-5">
-            COM A BENÇÃO DE DEUS E DE SEUS PAIS
-          </div>
-          
-          <div class="d-flex justify-content-evenly line-height mb-5">
-            <div>
-              Alberto Luiz Silva<br>
-              Juciane Maria C. Silva
+        <div class="d-flex mx-auto flex-column fundo-estendido mt-3">
+          <div class="m-b">
+            <div class="line-height m-y p-x">
+              "O amor é paciente, é bondoso. O amor tudo crê, tudo espera, tudo suporta. O amor jamais acabará!”
+              <div>1 Co 13:4-8</div>
             </div>
-            <div>
-              João Galberto Cabral<br>
-              Luciana R. Cabral
+            
+            <div class="mb-5">
+              COM A BENÇÃO DE DEUS E DE SEUS PAIS
             </div>
-          </div>
-          
-          <div class="Slight m-y">
-            Alberto<br>
-            e Silvia
-          </div>
-          
-          <div class="mb-3">CONVIDAM PARA O SEU CASAMENTO</div>
+            
+            <div class="d-flex justify-content-evenly line-height mb-5">
+              <div>
+                Alberto Luiz Silva<br>
+                Juciane Maria C. Silva
+              </div>
+              <div>
+                João Galberto Cabral<br>
+                Luciana R. Cabral
+              </div>
+            </div>
+            
+            <div class="Slight m-y">
+              Alberto<br>
+              e Silvia
+            </div>
+            
+            <div class="mb-3">CONVIDAM PARA O SEU CASAMENTO</div>
 
-          <div class="f-s" style="color: #4d84c8">SETEMBRO</div>
-           
-          <div class="d-flex justify-content-center align-items-center" style="color: #4d84c8">         
+            <div class="f-s" style="color: #4d84c8">SETEMBRO</div>
             
-            <div class="line-height f-s">
-              <hr class="linha-bolinhas">
-              <div>SÁBADO</div>
-              <hr class="linha-bolinhas">
+            <div class="d-flex justify-content-center align-items-center" style="color: #4d84c8">         
+              
+              <div class="line-height f-s">
+                <hr class="linha-bolinhas">
+                <div>SÁBADO</div>
+                <hr class="linha-bolinhas">
+              </div>
+              
+              <div class="m-x pb-1 dia">27</div>
+              
+              <div class="line-height f-s">
+                <hr class="linha-bolinhas">
+                <div>18H30</div>
+                <hr class="linha-bolinhas">
+              </div>
+              
             </div>
             
-            <div class="m-x pb-1 dia">27</div>
+            <div class="fs-2 mb-3" style="color: #4d84c8">2025</div>
             
-            <div class="line-height f-s">
-              <hr class="linha-bolinhas">
-              <div>18H30</div>
-              <hr class="linha-bolinhas">
+            <div class="icone-link mb-3 d-flex justify-content-evenly">
+              <a class="align-content-center" target="_blank" href="https://maps.app.goo.gl/yQcf36iWZiVCHtbU8?g_st=iw">
+                <img src="@/assets/img/local.png" />
+              </a>
+              <a class="align-content-center" target="_blank" href="https://flaxen-wildflower-e3f.notion.site/Lista-de-Presente-23043ae5559f80b49100cdc6c0c78bba">
+                <img src="@/assets/img/presente.png" />
+              </a>
+              <a class="align-content-center" target="_blank" href="https://wa.me/5563991034819?text=Ol%C3%A1,%20gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Alberto%20e%20Silvia">
+                <img src="@/assets/img/confirme.png" />
+              </a>
+              
+              <a class="align-content-center" target="_blank" href="https://drive.google.com/file/d/1FEY-bQOHHmZ0pSg7qvqTPMejU59MXWgo/view">
+                <img src="@/assets/img/manual.png" />
+              </a>
             </div>
             
+            <div class="interagir mb-5">
+              <img  src="@/assets/img/click.png">
+              CLIQUE NOS ÍCONES PARA INTERAGIR
+            </div>
           </div>
-          
-          <div class="fs-2 mb-3" style="color: #4d84c8">2025</div>
-          
-          <div class="icone-link mb-3 d-flex justify-content-evenly">
-            <a class="align-content-center" target="_blank" href="https://maps.app.goo.gl/yQcf36iWZiVCHtbU8?g_st=iw">
-              <img src="@/assets/img/local.png" />
-            </a>
-            <a class="align-content-center" target="_blank" href="https://flaxen-wildflower-e3f.notion.site/Lista-de-Presente-23043ae5559f80b49100cdc6c0c78bba">
-              <img src="@/assets/img/presente.png" />
-            </a>
-            <a class="align-content-center" target="_blank" href="https://wa.me/5563991034819?text=Ol%C3%A1,%20gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Alberto%20e%20Silvia">
-              <img src="@/assets/img/confirme.png" />
-            </a>
-            
-            <a class="align-content-center" target="_blank" href="https://drive.google.com/file/d/1FEY-bQOHHmZ0pSg7qvqTPMejU59MXWgo/view">
-              <img src="@/assets/img/manual.png" />
-            </a>
-          </div>
-          
-          <div class="interagir mb-5">
-            <img  src="@/assets/img/click.png">
-            CLIQUE NOS ÍCONES PARA INTERAGIR
-          </div>
-
-        
         </div>
 
         <!-- Aba esquerda -->
