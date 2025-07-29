@@ -52,19 +52,21 @@
           
           <div class="fs-2 mb-3" style="color: #4d84c8">2025</div>
           
-          <div class="icone-link mb-3 d-flex justify-content-center">
-            <a target="_blank" href="https://maps.app.goo.gl/yQcf36iWZiVCHtbU8?g_st=iw">
+          <div class="icone-link mb-3 d-flex justify-content-evenly">
+            <a class="align-content-center" target="_blank" href="https://maps.app.goo.gl/yQcf36iWZiVCHtbU8?g_st=iw">
               <img src="@/assets/img/local.png" />
             </a>
-            <a target="_blank" href="https://flaxen-wildflower-e3f.notion.site/Lista-de-Presente-23043ae5559f80b49100cdc6c0c78bba">
+            <a class="align-content-center" target="_blank" href="https://flaxen-wildflower-e3f.notion.site/Lista-de-Presente-23043ae5559f80b49100cdc6c0c78bba">
               <img src="@/assets/img/presente.png" />
             </a>
-            <a target="_blank" href="https://wa.me/5563991034819?text=Ol%C3%A1,%20gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Alberto%20e%20Silvia">
+            <a class="align-content-center" target="_blank" href="https://wa.me/5563991034819?text=Ol%C3%A1,%20gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Alberto%20e%20Silvia">
               <img src="@/assets/img/confirme.png" />
             </a>
-            <router-link to="manual">
+            <!-- <router-link to="manual">
+            </router-link> -->
+            <a class="align-content-center" target="_blank" href="https://drive.google.com/file/d/1FEY-bQOHHmZ0pSg7qvqTPMejU59MXWgo/view">
               <img src="@/assets/img/manual.png" />
-            </router-link>
+            </a>
           </div>
           <div class="interagir mb-5">
             <img  src="@/assets/img/click.png">
@@ -133,7 +135,6 @@
 }
 
 .icone-link img {
-  width: 4rem;
   height: 4rem;
   object-fit: contain;
 }
@@ -143,8 +144,9 @@
   padding-right: 1.7rem;
 }
 
-.interagir img{
+.interagir img {
   width: 1rem;
+  object-fit: contain;
 }
 
 .interagir {
