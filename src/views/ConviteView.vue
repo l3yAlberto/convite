@@ -62,16 +62,18 @@
             <a class="align-content-center" target="_blank" href="https://wa.me/5563991034819?text=Ol%C3%A1,%20gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Alberto%20e%20Silvia">
               <img src="@/assets/img/confirme.png" />
             </a>
-            <!-- <router-link to="manual">
-            </router-link> -->
+            
             <a class="align-content-center" target="_blank" href="https://drive.google.com/file/d/1FEY-bQOHHmZ0pSg7qvqTPMejU59MXWgo/view">
               <img src="@/assets/img/manual.png" />
             </a>
           </div>
+          
           <div class="interagir mb-5">
             <img  src="@/assets/img/click.png">
             CLIQUE NOS ÍCONES PARA INTERAGIR
           </div>
+
+        
         </div>
       </div>
     </div>
@@ -124,7 +126,7 @@
   background-image: 
     url('@/assets/flores-baixo.png'),
     url('@/assets/img/arco.png');
-  background-size: 95%, cover;
+  background-size: 95%, 88%;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;
   margin-left: 1rem;
