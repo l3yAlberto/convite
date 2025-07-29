@@ -1,8 +1,8 @@
 <template>
   <div class="text-center EBGaramond">
     <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 mt-3 fundo-estendido">
-        <div class="d-flex mx-auto flex-column m-b">
+      <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrir = !abrir">
+        <div class="d-flex mx-auto flex-column m-b fundo-estendido mt-3">
           <div class="line-height m-y p-x">
             "O amor é paciente, é bondoso. O amor tudo crê, tudo espera, tudo suporta. O amor jamais acabará!”
             <div>1 Co 13:4-8</div>
@@ -75,16 +75,143 @@
 
         
         </div>
+
+        <!-- Aba esquerda -->
+        <div 
+          class="envelope-flap flap-left" 
+          :class="{ 'left-open': abrir }"
+        >
+          <img src="@/assets/borda-esquerda.png" />
+          <div class="flor button">
+            <img src="@/assets/flor-button-esquerdo.png" />  
+          </div>
+        </div>
+
+        <!-- Aba direita -->
+        <div 
+          class="envelope-flap flap-right" 
+          :class="{ 'right-open': abrir }"
+        >
+          <img src="@/assets/borda-direita.png" />
+          <div class="flor top">
+            <img src="@/assets/flor-top-direita.png" />  
+          </div>
+        </div>
+
+        <div 
+          class="envelope-flap selo" 
+          :class="{ 'selo-open': abrir }"
+        >
+          <img src="@/assets/selo.png" />
+          <div class="abrir-click">
+            <img  src="@/assets/img/click.png">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
+const abrir = ref(false);
 
+// onMounted(() => {
+//   setInterval(() => { abrir.value = !abrir.value }, 2e3)
+// })
 </script>
 
 <style scoped>
+.envelope-container {
+  position: relative;
+  cursor: pointer;  
+}
+
+/* Base comum das abas */
+.envelope-flap {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* background: #ffa200; */
+  border-bottom: none;
+  top: 0;
+  z-index: 3;
+  transition: transform 1s ease-in-out;
+}
+
+.flor {
+  position: absolute;
+  z-index: 6;
+  width: 70%;
+}
+
+.abrir-click {
+  position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -20%;
+    opacity: .4;
+    width: 10%;
+}
+
+.button {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+  right: 0;
+}
+
+.selo {
+  position: absolute;
+  width: 100%;
+  /* top: 0; */
+  z-index: 4;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.selo img {
+  object-fit: contain;
+}
+
+.envelope-flap img {
+  height: 100%;
+  width: 100%;
+}
+
+.selo-open {
+  opacity: 0;
+}
+
+/* Flap esquerda */
+.flap-left {
+  left: 0;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  border-right: none;
+  border-top-left-radius: 4px;
+}
+
+/* Flap direita */
+.flap-right {
+  right: 0;
+  transform-origin: right center;
+  transform: rotateY(0deg);
+  border-left: none;
+  /* border-top-right-radius: 4px; */
+}
+
+/* Estado aberto: gira cada flap para fora */
+.left-open {
+  transform: rotateY(-90deg);
+}
+.right-open {
+  transform: rotateY(90deg);
+}
+
+
 .Slight {
   font-family: 'Slight-Regular', sans-serif;
   font-size: 3rem;
