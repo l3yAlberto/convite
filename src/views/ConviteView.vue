@@ -2,7 +2,41 @@
   <div class="text-center EBGaramond">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrir = true">
-        <div class="d-flex mx-auto flex-column fundo-estendido mt-3">
+        <!-- Aba esquerda -->
+        <div 
+          class="envelope-flap flap-left" 
+          :class="{ 'left-open': abrir }"
+        >
+          <img src="@/assets/borda-esquerda.png" />
+          <div class="flor button">
+            <img src="@/assets/flor-button-esquerdo.png" />  
+          </div>
+        </div>
+
+        <!-- Aba direita -->
+        <div 
+          class="envelope-flap flap-right" 
+          :class="{ 'right-open': abrir }"
+        >
+          <img src="@/assets/borda-direita.png" />
+          <div class="flor top">
+            <img src="@/assets/flor-top-direita.png" />  
+          </div>
+        </div>
+
+        <div 
+          class="envelope-flap selo" 
+          :class="{ 'selo-open': abrir }"
+        >
+          <img src="@/assets/selo.png" />
+          <div class="abrir-click">
+            <img  src="@/assets/img/click.png">
+          </div>
+        </div>
+
+        <div class="d-flex mx-auto flex-column fundo-estendido mt-3"
+          :class="{ 'opacity-0': !abrir }"
+        >
           <div class="m-b">
             <div class="line-height m-y p-x">
               "O amor é paciente, é bondoso. O amor tudo crê, tudo espera, tudo suporta. O amor jamais acabará!”
@@ -75,38 +109,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Aba esquerda -->
-        <div 
-          class="envelope-flap flap-left" 
-          :class="{ 'left-open': abrir }"
-        >
-          <img src="@/assets/borda-esquerda.png" />
-          <div class="flor button">
-            <img src="@/assets/flor-button-esquerdo.png" />  
-          </div>
-        </div>
-
-        <!-- Aba direita -->
-        <div 
-          class="envelope-flap flap-right" 
-          :class="{ 'right-open': abrir }"
-        >
-          <img src="@/assets/borda-direita.png" />
-          <div class="flor top">
-            <img src="@/assets/flor-top-direita.png" />  
-          </div>
-        </div>
-
-        <div 
-          class="envelope-flap selo" 
-          :class="{ 'selo-open': abrir }"
-        >
-          <img src="@/assets/selo.png" />
-          <div class="abrir-click">
-            <img  src="@/assets/img/click.png">
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -132,7 +134,7 @@ const abrir = ref(false);
   position: absolute;
   width: 50%;
   height: 100%;
-  /* background: #ffa200; */
+  /* background: #fff; */
   border-bottom: none;
   top: 0;
   z-index: 3;
