@@ -1,7 +1,7 @@
 <template>
   <div class="text-center EBGaramond">
     <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrir = !abrir">
+      <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrir = true">
         <div class="d-flex mx-auto flex-column m-b fundo-estendido mt-3">
           <div class="line-height m-y p-x">
             "O amor é paciente, é bondoso. O amor tudo crê, tudo espera, tudo suporta. O amor jamais acabará!”
@@ -124,7 +124,7 @@ const abrir = ref(false);
 <style scoped>
 .envelope-container {
   position: relative;
-  cursor: pointer;  
+  /* cursor: pointer;   */
 }
 
 /* Base comum das abas */
@@ -147,11 +147,11 @@ const abrir = ref(false);
 
 .abrir-click {
   position: relative;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: -20%;
-    opacity: .4;
-    width: 10%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: -20%;
+  opacity: .4;
+  width: 10%;
 }
 
 .button {
@@ -168,8 +168,7 @@ const abrir = ref(false);
   width: 100%;
   /* top: 0; */
   z-index: 4;
-  opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+  transition: display 0.8s ease-in-out;
 }
 
 .selo img {
@@ -182,7 +181,7 @@ const abrir = ref(false);
 }
 
 .selo-open {
-  opacity: 0;
+  display: none;
 }
 
 /* Flap esquerda */
@@ -265,14 +264,14 @@ const abrir = ref(false);
   background-image: 
     url('@/assets/flores-baixo.png'),
     url('@/assets/img/arco.png');
-  background-size: 95%, 88%;
+  background-size: 95%, 90%;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;
   margin-left: 1rem;
   margin-right: 1rem;
   padding-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
 }
 
 .icone-link img {
