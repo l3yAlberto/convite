@@ -1,3 +1,9 @@
+:root {
+  --cor-azul: #0e58a6;
+  --cor-cinza: #808080;
+  --font-base: 1rem;
+}
+
 @font-face {
   font-family: 'Slight-Regular';
   src: url('@/assets/fonts/Slight-Regular.woff2') format('woff2');
