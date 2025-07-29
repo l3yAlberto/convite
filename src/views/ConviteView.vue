@@ -35,17 +35,17 @@
           <div class="d-flex justify-content-center align-items-center" style="color: #4d84c8">         
             
             <div class="line-height f-s">
-              <div class="linha-top"></div>
+              <hr class="linha-bolinhas">
               <div>SÁBADO</div>
-              <div class="linha-button"></div>
+              <hr class="linha-bolinhas">
             </div>
             
             <div class="m-x pb-1 dia">27</div>
             
             <div class="line-height f-s">
-              <div class="linha-top"></div>
+              <hr class="linha-bolinhas">
               <div>18H30</div>
-              <div class="linha-button"></div>
+              <hr class="linha-bolinhas">
             </div>
             
           </div>
@@ -105,9 +105,21 @@
   margin-top: 5rem;
 }
 
+.linha-bolinhas {
+  width: 7rem;
+  border: none;         
+  height: 0.3rem;         
+  background-image: 
+    radial-gradient(circle, #4d84c8 50%, transparent 50%);
+  background-size: .29rem .25rem;
+  background-repeat: repeat-x;
+  margin: 0 0;      
+  opacity: 1;
+}
+
 .linha-top {
   width: 7rem;
-  border-bottom: 0.2rem dotted #4d84c8;
+  /* border-bottom: 0.2rem dotted #4d84c8; */
 }
 
 .linha-button {
@@ -190,6 +202,11 @@
 
   .f-s {
     font-size: 2.5rem;
+  }
+
+  .linha-bolinhas {
+    width: 9.8rem;
+    background-size: .39rem .37rem;
   }
 
   .linha-top {
