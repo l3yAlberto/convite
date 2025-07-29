@@ -107,12 +107,12 @@
 
 .linha-top {
   width: 7rem;
-  border-bottom: 0.3rem dotted #4d84c8;
+  border-bottom: 0.2rem dotted #4d84c8;
 }
 
 .linha-button {
   width: 7rem;
-  border-top: 0.3rem dotted #4d84c8;
+  border-top: 0.2rem dotted #4d84c8;
 }
 
 .dia {
