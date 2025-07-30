@@ -1,7 +1,7 @@
 <template>
   <div class="text-center EBGaramond">
     <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrir = true">
+      <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrirEnvelope">
         <!-- Aba esquerda -->
         <div 
           class="envelope-flap flap-left" 
@@ -115,12 +115,19 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
+import pianoSrc from '@/assets/audio.mp3';
+const audio = new Audio(pianoSrc);
 const abrir = ref(false);
 
-// onMounted(() => {
-//   setInterval(() => { abrir.value = !abrir.value }, 2e3)
-// })
+function abrirEnvelope() {
+  if (audio.paused) {
+    audio.loop = true;
+    audio.play();
+  }
+  if (!abrir.value) abrir.value = true;
+}
+
 </script>
 
 <style scoped>
