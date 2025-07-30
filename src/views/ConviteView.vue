@@ -7,7 +7,7 @@
           class="envelope-flap flap-left" 
           :class="{ 'left-open': abrir }"
         >
-          <img src="@/assets/borda-esquerda.png" />
+          <img src="@/assets/borda-esquerda.jpeg" />
           <div class="flor button">
             <img src="@/assets/flor-button-esquerdo.png" />  
           </div>
@@ -18,7 +18,7 @@
           class="envelope-flap flap-right" 
           :class="{ 'right-open': abrir }"
         >
-          <img src="@/assets/borda-direita.png" />
+          <img src="@/assets/borda-direita.jpeg" />
           <div class="flor top">
             <img src="@/assets/flor-top-direita.png" />  
           </div>
