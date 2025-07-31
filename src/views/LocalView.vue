@@ -9,8 +9,8 @@
               <div class="end">
                 <div class="Slight mt-5">Cerimônia</div>
                 <div class="EBGaramond">
-                  <div>Rua Antônio Nunes da Silva</div>
-                  <div>Quadra 01</div>
+                  <div>ESPAÇO FESTANNE</div>
+                  <div>Rua Antônio Nunes da Silva, Quadra 01</div>
                   <div>Residencial Park dos Buritis</div>
                   <div>Gurupi - Tocantins</div>
                 </div>
