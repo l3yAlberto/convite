@@ -1,11 +1,11 @@
 <template>
   <div class="text-center EBGaramond">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center ">
       <div class="col-sm-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 envelope-container" @click="abrirEnvelope">
         <!-- Aba esquerda -->
         <div 
           class="envelope-flap flap-left" 
-          :class="{ 'left-open': abrir }"
+          :class="{ 'left-open': useCounter.play }"
         >
           <img src="@/assets/borda-esquerda.jpeg" />
           <div class="flor button">
@@ -16,7 +16,7 @@
         <!-- Aba direita -->
         <div 
           class="envelope-flap flap-right" 
-          :class="{ 'right-open': abrir }"
+          :class="{ 'right-open': useCounter.play }"
         >
           <img src="@/assets/borda-direita.jpeg" />
           <div class="flor top">
@@ -26,7 +26,7 @@
 
         <div 
           class="envelope-flap selo" 
-          :class="{ 'selo-open': abrir }"
+          :class="{ 'selo-open': useCounter.play }"
         >
           <img src="@/assets/selo.png" />
           <div class="abrir-click">
@@ -35,7 +35,7 @@
         </div>
 
         <div class="d-flex mx-auto flex-column fundo-estendido mt-3"
-          :class="{ 'opacity-0': !abrir }"
+          :class="{ 'opacity-0': !useCounter.play }"
         >
           <div class="m-b">
             <div class="line-height m-y p-x">
@@ -88,9 +88,9 @@
             <div class="fs-2 mb-3" style="color: #4d84c8">2025</div>
             
             <div class="icone-link mb-3 d-flex justify-content-evenly">
-              <a class="align-content-center" target="_blank" href="https://maps.app.goo.gl/yQcf36iWZiVCHtbU8?g_st=iw">
+              <router-link to="local" class="align-content-center">
                 <img src="@/assets/img/local.png" />
-              </a>
+              </router-link>
               <a class="align-content-center" target="_blank" href="https://flaxen-wildflower-e3f.notion.site/Lista-de-Presente-23043ae5559f80b49100cdc6c0c78bba">
                 <img src="@/assets/img/presente.png" />
               </a>
@@ -115,17 +115,22 @@
 </template>
 
 <script setup lang="ts">
+// https://maps.app.goo.gl/yQcf36iWZiVCHtbU8?g_st=iw
+//  target="_blank"
 import { ref } from 'vue';
 import pianoSrc from '@/assets/audio.mp3';
+import { useCounterStore } from '@/stores/counter';
+const useCounter = useCounterStore();
 const audio = new Audio(pianoSrc);
-const abrir = ref(false);
 
 function abrirEnvelope() {
-  if (audio.paused) {
-    audio.loop = true;
-    audio.play();
+  if (!useCounter.play) {
+    useCounter.play = true;
+    if (audio.paused) {
+      audio.loop = true;
+      audio.play();
+    }
   }
-  if (!abrir.value) abrir.value = true;
 }
 
 </script>
