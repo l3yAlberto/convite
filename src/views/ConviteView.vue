@@ -60,7 +60,7 @@
             
             <div class="Slight m-y">
               Alberto<br>
-              e Silvia
+              e Sílvia
             </div>
             
             <div class="mb-3">CONVIDAM PARA O SEU CASAMENTO</div>
