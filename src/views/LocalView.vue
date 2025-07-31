@@ -17,7 +17,7 @@
               </div>
             </div>
             <img  src="@/assets/frente-festane.jpeg" class="img-fluid w-100 rounded my-3">
-            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4847.495561559791!2d-49.10699162494371!3d-11.73111108848169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQzJzUyLjAiUyA0OcKwMDYnMTUuOSJX!5e1!3m2!1spt-PT!2sbr!4v1753914361332!5m2!1spt-PT!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4847.495561559791!2d-49.10699162494371!3d-11.73111108848169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQzJzUyLjAiUyA0OcKwMDYnMTUuOSJX!5e1!3m2!1spt-PT!2sbr!4v1753914361332!5m2!1spt-PT!2sbr" width="100%" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
